@@ -1,0 +1,29 @@
+{{define "admin_layout"}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{block "css" .}}
+    {{end}}
+    <title>Mammon | Admin</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/admin">Dashboard</a>
+        <a href="/admin/profile">Profile</a>
+        <a href="/admin/logout">Logout</a>
+    </nav>
+    {{block "content" .}}
+    {{end}}
+
+    <!-- Page wise javascript -->
+    {{block "js" .}}
+    {{end}}
+</body>
+
+</html>
+
+{{end}}
