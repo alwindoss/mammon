@@ -1,0 +1,2 @@
+# mammon
+Personal money manager
